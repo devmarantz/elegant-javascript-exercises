@@ -1,5 +1,7 @@
 # Assignment
 
+A set of exercises to help develop my JS skills
+
 Read the following chapters from [Eloquent JavaScript](https://eloquentjavascript.net/index.html) and complete the exercises at the end of each chapter:
 
 - **[5. Higher-order Functions](https://eloquentjavascript.net/05_higher_order.html)**: for the final exercise, make sure to download [`scripts.js`](https://eloquentjavascript.net/code/scripts.js) and import it into your code.
