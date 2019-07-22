@@ -101,14 +101,7 @@ const SCRIPTS = [
   },
   {
     name: 'Armenian',
-    ranges: [
-      [1329, 1367],
-      [1369, 1376],
-      [1377, 1416],
-      [1418, 1419],
-      [1421, 1424],
-      [64275, 64280],
-    ],
+    ranges: [[1329, 1367], [1369, 1376], [1377, 1416], [1418, 1419], [1421, 1424], [64275, 64280]],
     direction: 'ltr',
     year: 405,
     living: true,
@@ -275,14 +268,7 @@ const SCRIPTS = [
   },
   {
     name: 'Cypriot',
-    ranges: [
-      [67584, 67590],
-      [67592, 67593],
-      [67594, 67638],
-      [67639, 67641],
-      [67644, 67645],
-      [67647, 67648],
-    ],
+    ranges: [[67584, 67590], [67592, 67593], [67594, 67638], [67639, 67641], [67644, 67645], [67647, 67648]],
     direction: 'rtl',
     year: -1100,
     living: false,
@@ -323,13 +309,7 @@ const SCRIPTS = [
   },
   {
     name: 'Duployan',
-    ranges: [
-      [113664, 113771],
-      [113776, 113789],
-      [113792, 113801],
-      [113808, 113818],
-      [113820, 113824],
-    ],
+    ranges: [[113664, 113771], [113776, 113789], [113792, 113801], [113808, 113818], [113820, 113824]],
     direction: 'ltr',
     year: 1860,
     living: true,
@@ -651,12 +631,7 @@ const SCRIPTS = [
   },
   {
     name: 'Hiragana',
-    ranges: [
-      [12353, 12439],
-      [12445, 12448],
-      [110593, 110879],
-      [127488, 127489],
-    ],
+    ranges: [[12353, 12439], [12445, 12448], [110593, 110879], [127488, 127489]],
     direction: 'ltr',
     year: 800,
     living: true,
@@ -672,13 +647,7 @@ const SCRIPTS = [
   },
   {
     name: 'Pahawh Hmong',
-    ranges: [
-      [92928, 92998],
-      [93008, 93018],
-      [93019, 93026],
-      [93027, 93048],
-      [93053, 93072],
-    ],
+    ranges: [[92928, 92998], [93008, 93018], [93019, 93026], [93027, 93048], [93053, 93072]],
     direction: 'ltr',
     year: 1959,
     living: true,
@@ -799,13 +768,7 @@ const SCRIPTS = [
   },
   {
     name: 'Tai Tham',
-    ranges: [
-      [6688, 6751],
-      [6752, 6781],
-      [6783, 6794],
-      [6800, 6810],
-      [6816, 6830],
-    ],
+    ranges: [[6688, 6751], [6752, 6781], [6783, 6794], [6800, 6810], [6816, 6830]],
     direction: 'ltr',
     year: 1300,
     living: true,
@@ -888,13 +851,7 @@ const SCRIPTS = [
   },
   {
     name: 'Limbu',
-    ranges: [
-      [6400, 6431],
-      [6432, 6444],
-      [6448, 6460],
-      [6464, 6465],
-      [6468, 6480],
-    ],
+    ranges: [[6400, 6431], [6432, 6444], [6448, 6460], [6464, 6465], [6468, 6480]],
     direction: 'ltr',
     year: 1740,
     living: true,
@@ -1031,15 +988,7 @@ const SCRIPTS = [
   },
   {
     name: 'Mongolian',
-    ranges: [
-      [6144, 6146],
-      [6148, 6149],
-      [6150, 6159],
-      [6160, 6170],
-      [6176, 6264],
-      [6272, 6315],
-      [71264, 71277],
-    ],
+    ranges: [[6144, 6146], [6148, 6149], [6150, 6159], [6160, 6170], [6176, 6264], [6272, 6315], [71264, 71277]],
     direction: 'ttb',
     year: 1204,
     living: false,
@@ -1063,13 +1012,7 @@ const SCRIPTS = [
   },
   {
     name: 'Multani',
-    ranges: [
-      [70272, 70279],
-      [70280, 70281],
-      [70282, 70286],
-      [70287, 70302],
-      [70303, 70314],
-    ],
+    ranges: [[70272, 70279], [70280, 70281], [70282, 70286], [70287, 70302], [70303, 70314]],
     direction: 'ltr',
     year: 1750,
     living: false,
@@ -1529,15 +1472,7 @@ const SCRIPTS = [
   },
   {
     name: 'Tibetan',
-    ranges: [
-      [3840, 3912],
-      [3913, 3949],
-      [3953, 3992],
-      [3993, 4029],
-      [4030, 4045],
-      [4046, 4053],
-      [4057, 4059],
-    ],
+    ranges: [[3840, 3912], [3913, 3949], [3953, 3992], [3993, 4029], [4030, 4045], [4046, 4053], [4057, 4059]],
     direction: 'ltr',
     year: 650,
     living: false,
@@ -1605,17 +1540,12 @@ const SCRIPTS = [
     direction: 'ltr',
     year: 1700,
     living: false,
-    link:
-      'https://en.wikipedia.org/wiki/Mongolian_writing_systems#Horizontal_square_script',
+    link: 'https://en.wikipedia.org/wiki/Mongolian_writing_systems#Horizontal_square_script',
   },
 ];
 
 // This makes sure the data is exported in node.js —
 // `require('./path/to/scripts.js')` will get you the array.
-if (
-  typeof module !== 'undefined' &&
-  module.exports &&
-  (typeof window === 'undefined' || window.exports != exports)
-)
+if (typeof module !== 'undefined' && module.exports && (typeof window === 'undefined' || window.exports != exports))
   module.exports = SCRIPTS;
 if (typeof global !== 'undefined' && !global.SCRIPTS) global.SCRIPTS = SCRIPTS;
